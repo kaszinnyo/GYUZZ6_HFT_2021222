@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GYUZZ6_HFT_2021222.Models\GYUZZ6_HFT_2021222.Models.csproj" />
+    <ProjectReference Include="..\GYUZZ6_HFT_2021222.Repository\GYUZZ6_HFT_2021222.Repository.csproj" />
   </ItemGroup>
 
 </Project>

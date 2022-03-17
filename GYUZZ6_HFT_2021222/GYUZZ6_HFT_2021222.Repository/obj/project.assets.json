@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
-      "projectName": "GYUZZ6_HFT_2021222.Client",
-      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
+      "projectName": "GYUZZ6_HFT_2021222.Repository",
+      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
       "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\obj\\",
+      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

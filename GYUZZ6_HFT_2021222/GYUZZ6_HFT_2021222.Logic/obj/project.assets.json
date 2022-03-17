@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/GYUZZ6_HFT_2021222.Models.dll": {}
         }
+      },
+      "GYUZZ6_HFT_2021222.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "GYUZZ6_HFT_2021222.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GYUZZ6_HFT_2021222.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GYUZZ6_HFT_2021222.Repository.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../GYUZZ6_HFT_2021222.Models/GYUZZ6_HFT_2021222.Models.csproj",
       "msbuildProject": "../GYUZZ6_HFT_2021222.Models/GYUZZ6_HFT_2021222.Models.csproj"
+    },
+    "GYUZZ6_HFT_2021222.Repository/1.0.0": {
+      "type": "project",
+      "path": "../GYUZZ6_HFT_2021222.Repository/GYUZZ6_HFT_2021222.Repository.csproj",
+      "msbuildProject": "../GYUZZ6_HFT_2021222.Repository/GYUZZ6_HFT_2021222.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "GYUZZ6_HFT_2021222.Models >= 1.0.0"
+      "GYUZZ6_HFT_2021222.Models >= 1.0.0",
+      "GYUZZ6_HFT_2021222.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
-      "projectName": "GYUZZ6_HFT_2021222.Client",
-      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
+      "projectName": "GYUZZ6_HFT_2021222.Logic",
+      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
       "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\obj\\",
+      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,6 +78,9 @@
           "projectReferences": {
             "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
               "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
+            },
+            "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
+              "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj"
             }
           }
         }

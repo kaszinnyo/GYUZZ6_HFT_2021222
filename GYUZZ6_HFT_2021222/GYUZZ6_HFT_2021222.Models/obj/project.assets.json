@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "GYUZZ6_HFT_2021222.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/GYUZZ6_HFT_2021222.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GYUZZ6_HFT_2021222.Models.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "GYUZZ6_HFT_2021222.Models/1.0.0": {
-      "type": "project",
-      "path": "../GYUZZ6_HFT_2021222.Models/GYUZZ6_HFT_2021222.Models.csproj",
-      "msbuildProject": "../GYUZZ6_HFT_2021222.Models/GYUZZ6_HFT_2021222.Models.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "GYUZZ6_HFT_2021222.Models >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\Barna\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
-      "projectName": "GYUZZ6_HFT_2021222.Client",
-      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
+      "projectName": "GYUZZ6_HFT_2021222.Models",
+      "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
       "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\obj\\",
+      "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,11 +37,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
-              "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
