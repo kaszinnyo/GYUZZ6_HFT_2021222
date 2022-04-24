@@ -69,6 +69,7 @@ namespace GYUZZ6_HFT_2021222.Client
                     Console.WriteLine($"Id: {rent.Id}, Renter's name: {rent.RenterName}, Date: {rent.Date.ToString()}, Rent Time: {rent.RentTime}, Rating: {rent.Rating}");
                 }
             }
+            Console.ReadLine();
         }
 
         static void Delete(string entity)
@@ -97,14 +98,53 @@ namespace GYUZZ6_HFT_2021222.Client
 
         static void BasePriceAverageByBrand()
         {
-            List<KeyValuePair<string, double>> lsit = rest.Get<KeyValuePair<string, double>>("stat/basepriceaveragebybrand");
-            foreach (var item in lsit)
+            List<KeyValuePair<string, double>> list = rest.Get<KeyValuePair<string, double>>("stat/basepriceaveragebybrand");
+            foreach (var item in list)
             {
                 Console.WriteLine($"Brand: {item.Key} - AvgPrice: {item.Value}");
             }
             Console.ReadLine();
         }
 
+        static void RentCountByModel()
+        {
+            List<KeyValuePair<string, int>> list = rest.Get<KeyValuePair<string, int>>("stat/rentcountbymodel");
+            foreach (var item in list)
+            {
+                Console.WriteLine($"Model: {item.Key} - RentCount: {item.Value}");
+            }
+            Console.ReadLine();
+        }
+
+        static void RentsSumByDate()
+        {
+            List<KeyValuePair<string, double>> list = rest.Get<KeyValuePair<string, double>>("stat/rentssumbydate");
+            foreach (var item in list)
+            {
+                Console.WriteLine($"Date: {item.Key} - RentSum: {item.Value}");
+            }
+            Console.ReadLine();
+        }
+
+        static void BrandCarCount()
+        {
+            List<KeyValuePair<string, int>> list = rest.Get<KeyValuePair<string, int>>("stat/brandcarcount");
+            foreach (var item in list)
+            {
+                Console.WriteLine($"Brand: {item.Key} - CarCount: {item.Value}");
+            }
+            Console.ReadLine();
+        }
+
+        static void AverageRatingByModel()
+        {
+            List<KeyValuePair<string, double>> list = rest.Get<KeyValuePair<string, double>>("stat/averageratingbymodel");
+            foreach (var item in list)
+            {
+                Console.WriteLine($"Model: {item.Key} - AvgRating: {item.Value}");
+            }
+            Console.ReadLine();
+        }
 
         static void Main(string[] args)
         {
@@ -130,6 +170,10 @@ namespace GYUZZ6_HFT_2021222.Client
 
             var statSubMenu = new ConsoleMenu(args, level: 1)
                 .Add("BasePriceAverageByBrand", () => BasePriceAverageByBrand())
+                .Add("RentCountByModel", () => RentCountByModel())
+                .Add("RentsSumByDate", () => RentsSumByDate())
+                .Add("BrandCarCount", () => BrandCarCount())
+                .Add("AverageRatingByModel", () => AverageRatingByModel())
                 .Add("Exit", ConsoleMenu.Close);
 
             var menu = new ConsoleMenu(args, level: 0)

@@ -13,13 +13,11 @@ namespace GYUZZ6_HFT_2021222.Logic.Classes
     {
         IRepository<Rent> rentRepo;
         IRepository<Car> carRepo;
-        IRepository<Brand> brandRepo;
 
         public RentLogic(IRepository<Rent> rentRepo, IRepository<Car> carRepo, IRepository<Brand> brandRepo)
         {
             this.rentRepo = rentRepo;
             this.carRepo = carRepo;
-            this.brandRepo = brandRepo;
         }
 
         public void Create(Rent item)
