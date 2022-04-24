@@ -16,7 +16,7 @@ namespace GYUZZ6_HFT_2021222.Repository
 
         public override Brand Read(int id)
         {
-            return ctx.Brands.FirstOrDefault(b=>b.Id == id)
+            return ctx.Brands.FirstOrDefault(b => b.Id == id);
         }
 
         public override void Update(Brand item)
