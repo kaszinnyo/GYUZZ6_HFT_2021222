@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\GYUZZ6_HFT_2021222.Logic\GYUZZ6_HFT_2021222.Logic.csproj" />
     <ProjectReference Include="..\GYUZZ6_HFT_2021222.Models\GYUZZ6_HFT_2021222.Models.csproj" />
     <ProjectReference Include="..\GYUZZ6_HFT_2021222.Repository\GYUZZ6_HFT_2021222.Repository.csproj" />

@@ -14,5 +14,10 @@ namespace GYUZZ6_HFT_2021222.Logic.Interfaces
         Rent Read(int id);
         IQueryable<Rent> ReadAll();
         void Update(Rent item);
+        IEnumerable<KeyValuePair<string, double>> BasePriceAverageByBrand();
+        IEnumerable<KeyValuePair<string, int>> RentCountByModel();
+        IEnumerable<KeyValuePair<string, double>> RentsSumByDate();
+        IEnumerable<KeyValuePair<string, int>> BrandCarCount();
+        IEnumerable<KeyValuePair<string, double>> AverageRatingByModel();
     }
 }
