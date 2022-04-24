@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {}
+    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
+    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
         "projectName": "GYUZZ6_HFT_2021222.Models",
-        "projectPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
+        "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
         "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Barna\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\obj\\",
+        "outputPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
