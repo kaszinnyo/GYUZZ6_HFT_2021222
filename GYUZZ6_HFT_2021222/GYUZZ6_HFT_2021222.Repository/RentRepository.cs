@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace GYUZZ6_HFT_2021222.Repository
 {
-    public class RentRepositoryp : Repository<Rent>
+    public class RentRepository : Repository<Rent>
     {
-        public RentRepositoryp(CarDbContext ctx) : base(ctx)
+        public RentRepository(CarDbContext ctx) : base(ctx)
         {
         }
 
