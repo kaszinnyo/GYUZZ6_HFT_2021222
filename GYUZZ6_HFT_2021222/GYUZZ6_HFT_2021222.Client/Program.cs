@@ -72,6 +72,81 @@ namespace GYUZZ6_HFT_2021222.Client
             Console.ReadLine();
         }
 
+        static void One(string entity)
+        {
+            if (entity == "Brand")
+            {
+                Console.WriteLine("Enter Brand's: ");
+                int id = int.Parse(Console.ReadLine());
+                Brand one = rest.Get<Brand>(id,"brand");
+                Console.WriteLine($"Id:{one.Id},  Name: {one.Name}");
+            }
+            else if (entity == "Car")
+            {
+                Console.WriteLine("Enter Car's: ");
+                int id = int.Parse(Console.ReadLine());
+                Car one = rest.Get<Car>(id, "car");
+                Console.WriteLine($"Id: {one.Id}, Model: {one.Model}, Price: {one.BasePrice}");
+            }
+            else if (entity == "Rent")
+            {
+                Console.WriteLine("Enter Rent's: ");
+                int id = int.Parse(Console.ReadLine());
+                Rent one = rest.Get<Rent>(id,"rent");
+                Console.WriteLine($"Id: {one.Id}, Renter's name: {one.RenterName}, Date: {one.Date.ToString()}, Rent Time: {one.RentTime}, Rating: {one.Rating}");
+            }
+            Console.ReadLine();
+        }
+
+        static void Update(string entity)
+        {
+            if (entity == "Brand")
+            {
+                Console.WriteLine("Enter Brand's Id to update: ");
+                int id = int.Parse(Console.ReadLine());
+                Brand one = rest.Get<Brand>(id, "brand");
+                Console.WriteLine($"New Name [old:{one.Name}]: ");
+                string name = Console.ReadLine();
+                one.Name = name;
+                rest.Put(one, "brand");
+            }
+            else if (entity == "Car")
+            {
+                Console.WriteLine("Enter Car's Id to update: ");
+                int id = int.Parse(Console.ReadLine());
+                Car one = rest.Get<Car>(id, "car");
+                Console.WriteLine("What do you want to update?");
+                Console.WriteLine("Model[0]\tBasePrice[1]");
+                int choice = int.Parse(Console.ReadLine());
+                if (choice == 0)
+                {
+                    Console.WriteLine($"New Model Name [old:{one.Model}]: ");
+                    string model = Console.ReadLine();
+                    one.Model = model;
+                    rest.Put(one, "car");
+                }
+                else if(choice == 1)
+                {
+                    Console.WriteLine($"New BasePrice [old:{one.BasePrice}]: ");
+                    int baseprice = int.Parse(Console.ReadLine());
+                    one.BasePrice = baseprice;
+                    rest.Put(one, "car");
+                }
+                else Console.WriteLine("Wrong number!");
+                Console.ReadLine();
+            }
+            else if (entity == "Rent")
+            {
+                Console.WriteLine("Enter Rent's Id to update: ");
+                int id = int.Parse(Console.ReadLine());
+                Rent one = rest.Get<Rent>(id, "rent");
+                Console.WriteLine($"New rating [old:{one.Rating}]: ");
+                double rating = double.Parse(Console.ReadLine());
+                one.Rating = rating;
+                rest.Put(one, "rent");
+            }
+        }
+
         static void Delete(string entity)
         {
             if (entity == "Brand")
@@ -152,19 +227,25 @@ namespace GYUZZ6_HFT_2021222.Client
 
             var carSubMenu = new ConsoleMenu(args, level:1)
                 .Add("List", ()=> List("Car"))
+                .Add("One", ()=> One("Car"))
                 .Add("Create", () => Create("Car"))
+                .Add("Update", () => Update("Car"))
                 .Add("Delete", () => Delete("Car"))
                 .Add("Exit", ConsoleMenu.Close);
 
             var brandSubMenu = new ConsoleMenu(args, level: 1)
                 .Add("List", () => List("Brand"))
+                .Add("One", () => One("Brand"))
                 .Add("Create", () => Create("Brand"))
+                .Add("Update", () => Update("Brand"))
                 .Add("Delete", () => Delete("Brand"))
                 .Add("Exit", ConsoleMenu.Close);
 
             var rentSubMenu = new ConsoleMenu(args, level: 1)
                 .Add("List", () => List("Rent"))
+                .Add("One", () => One("Rent"))
                 .Add("Create", () => Create("Rent"))
+                .Add("Update", () => Update("Rent"))
                 .Add("Delete", () => Delete("Rent"))
                 .Add("Exit", ConsoleMenu.Close);
 
