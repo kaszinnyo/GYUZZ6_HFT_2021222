@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace GYUZZ6_HFT_2021222.Models
 {
@@ -30,6 +31,7 @@ namespace GYUZZ6_HFT_2021222.Models
         public int BrandId { get; set; }
 
         [NotMapped]
+        [JsonIgnore]
         public virtual Brand Brand { get; set; }
 
         [NotMapped]

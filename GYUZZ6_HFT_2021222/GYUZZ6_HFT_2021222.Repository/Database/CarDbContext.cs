@@ -21,8 +21,8 @@ namespace GYUZZ6_HFT_2021222.Repository.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Car.mdf;Integrated Security=True;";
-            if (!optionsBuilder.IsConfigured) optionsBuilder.UseSqlServer(conn).UseLazyLoadingProxies();
+            //string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Car.mdf;Integrated Security=True;";
+            if (!optionsBuilder.IsConfigured) optionsBuilder.UseInMemoryDatabase("mydb").UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

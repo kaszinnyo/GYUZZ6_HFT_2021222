@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace GYUZZ6_HFT_2021222.Models
 {
@@ -34,6 +35,7 @@ namespace GYUZZ6_HFT_2021222.Models
         public double? Rating { get; set; }
 
         [NotMapped]
+        [JsonIgnore]
         public virtual Car Car { get; set; }
     }
 }

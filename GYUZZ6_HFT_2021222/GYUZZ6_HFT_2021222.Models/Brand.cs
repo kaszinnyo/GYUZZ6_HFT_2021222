@@ -21,6 +21,7 @@ namespace GYUZZ6_HFT_2021222.Models
         [Column("name")]
         public string Name { get; set; }
 
+        [NotMapped]
         public virtual ICollection<Car> Cars { get; set; }
     }
 }
