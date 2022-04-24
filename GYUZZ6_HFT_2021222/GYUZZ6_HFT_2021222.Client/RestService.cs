@@ -5,9 +5,8 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace MovieDbApp.Client
-{
+namespace GYUZZ6_HFT_2021222.EndPoint
+{ 
     class RestService
     {
         HttpClient client;
