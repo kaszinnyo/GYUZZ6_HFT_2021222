@@ -1,10 +1,6 @@
 ﻿using GYUZZ6_HFT_2021222.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GYUZZ6_HFT_2021222.Repository.Database
 {
@@ -21,7 +17,6 @@ namespace GYUZZ6_HFT_2021222.Repository.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Car.mdf;Integrated Security=True;";
             if (!optionsBuilder.IsConfigured) optionsBuilder.UseInMemoryDatabase("mydb").UseLazyLoadingProxies();
         }
 
