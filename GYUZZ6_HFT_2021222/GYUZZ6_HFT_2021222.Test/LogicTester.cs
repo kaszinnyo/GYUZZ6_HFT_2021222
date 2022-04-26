@@ -24,41 +24,92 @@ namespace GYUZZ6_HFT_2021222.Test
         [SetUp]
         public void Init()
         {
-            mockBrandRepository = new Mock<IRepository<Brand>>();
-            mockBrandRepository.Setup(mb => mb.ReadAll()).Returns(new List<Brand>()
+            var brandInput = new List<Brand>()
             {
                 new Brand(){ Id = 1, Name = "Tesla"},
                 new Brand(){ Id = 2, Name = "Mercedes"},
-            }.AsQueryable());
+            };
+
+            var carInput = new List<Car>()
+            {
+                new Car(){ Id = 1, Model = "Tesla Model S", BasePrice = 95000, BrandId = 1, Brand = brandInput[0]},
+                new Car(){ Id = 2, Model = "Eqs", BasePrice = 105000, BrandId = 2, Brand = brandInput[1]},
+            };
+
+            var rentInput = new List<Rent>()
+            {
+                new Rent(){ Id = 1, CarId = 1, Date = new DateTime(2021,04,20), RenterName = "Drew", RentTime = 1.5, Rating = 4.5, Car = carInput[0] },
+                new Rent(){ Id = 2, CarId = 2, Date = new DateTime(2021,04,21), RenterName = "Nick", RentTime = 1.8, Rating = 3.5, Car = carInput[1] },
+            };
+            mockBrandRepository = new Mock<IRepository<Brand>>();
+            mockBrandRepository.Setup(mb => mb.ReadAll()).Returns(brandInput.AsQueryable());
             brandLogic = new BrandLogic(mockBrandRepository.Object);
 
             mockCarRepository = new Mock<IRepository<Car>>();
-            mockCarRepository.Setup(mc => mc.ReadAll()).Returns(new List<Car>()
-            {
-                new Car(){ Id = 1, Model = "Tesla Model S", BasePrice = 95000, BrandId = 1},
-                new Car(){ Id = 2, Model = "Eqs", BasePrice = 105000, BrandId = 2},
-            }.AsQueryable());
+            mockCarRepository.Setup(mc => mc.ReadAll()).Returns(carInput.AsQueryable());
             carLogic = new CarLogic(mockCarRepository.Object);
 
             mockRentRepository = new Mock<IRepository<Rent>>();
-            mockRentRepository.Setup(mr => mr.ReadAll()).Returns(new List<Rent>()
-            {
-                new Rent(){ Id = 1, CarId = 1, Date = new DateTime(2021,04,20), RenterName = "Drew", RentTime = 1.5, Rating = 4.5 },
-                new Rent(){ Id = 2, CarId = 2, Date = new DateTime(2021,04,21), RenterName = "Nick", RentTime = 1.8, Rating = 3.5 },
-            }.AsQueryable());
+            mockRentRepository.Setup(mr => mr.ReadAll()).Returns(rentInput.AsQueryable());
             rentLogic = new RentLogic(mockRentRepository.Object, mockCarRepository.Object, mockBrandRepository.Object);
+
+
         }
 
         [Test]
         public void BrandCreateTest()
         {
-            var brand = new Brand() { Name = "Bmw"};
+            var brand = new Brand() { Name = "Bmw" };
 
             //act
             brandLogic.Create(brand);
 
             //assert
             mockBrandRepository.Verify(b => b.Create(brand), Times.Once);
+        }
+
+        [Test]
+        public void CarCreateTest()
+        {
+            var car = new Car() { Model = "Tesla Model 2" };
+
+            //act
+            carLogic.Create(car);
+
+            //assert
+            mockCarRepository.Verify(c => c.Create(car), Times.Once);
+        }
+
+        [Test]
+        public void RentCreateTest()
+        {
+            var rent = new Rent() { RenterName = "Drew", Rating = 3.4 };
+
+            //act
+            rentLogic.Create(rent);
+
+            //assert
+            mockRentRepository.Verify(r => r.Create(rent), Times.Once);
+        }
+
+        [Test]
+        public void BrandDeleteTest()
+        {
+            //act
+            brandLogic.Delete(1);
+
+            //assert
+            mockBrandRepository.Verify(b => b.Delete(1), Times.Once);
+        }
+
+        [Test]
+        public void CarDeleteTest()
+        {
+            //act
+            carLogic.Delete(1);
+
+            //assert
+            mockCarRepository.Verify(c => c.Delete(1), Times.Once);
         }
 
         [Test]
@@ -71,9 +122,73 @@ namespace GYUZZ6_HFT_2021222.Test
             };
 
             //act
-            var actual = rentLogic.BasePriceAverageByBrand().ToList();
+            var actual = rentLogic.BasePriceAverageByBrand();
 
-            //asset
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void RentCountByModel()
+        {
+            var expected = new List<KeyValuePair<string, int>>()
+            {
+                new KeyValuePair<string, int>("Tesla Model S",1),
+                new KeyValuePair<string, int>("Eqs",1),
+            };
+
+            //act
+            var actual = rentLogic.RentCountByModel();
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void RentsSumByDate()
+        {
+            var expected = new List<KeyValuePair<string, double>>()
+            {
+                new KeyValuePair<string, double>("20/04/2021 00:00:00",1.5),
+                new KeyValuePair<string, double>("21/04/2021 00:00:00",1.8),
+            };
+
+            //act
+            var actual = rentLogic.RentsSumByDate();
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void BrandCarCount()
+        {
+            var expected = new List<KeyValuePair<string, int>>()
+            {
+                new KeyValuePair<string, int>("Tesla",1),
+                new KeyValuePair<string, int>("Mercedes",1),
+            };
+
+            //act
+            var actual = rentLogic.BrandCarCount();
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AverageRatingByModel()
+        {
+            var expected = new List<KeyValuePair<string, double>>()
+            {
+                new KeyValuePair<string, double>("Tesla Model S",4.5),
+                new KeyValuePair<string, double>("Eqs",3.5),
+            };
+
+            //act
+            var actual = rentLogic.AverageRatingByModel();
+
+            //assert
             Assert.AreEqual(expected, actual);
         }
     }
