@@ -44,9 +44,7 @@ namespace GYUZZ6_HFT_2021222.Models
                    Id == car.Id &&
                    Model == car.Model &&
                    BasePrice == car.BasePrice &&
-                   BrandId == car.BrandId &&
-                   EqualityComparer<Brand>.Default.Equals(Brand, car.Brand) &&
-                   EqualityComparer<ICollection<Rent>>.Default.Equals(Rents, car.Rents);
+                   BrandId == car.BrandId;
         }
 
         public override int GetHashCode()

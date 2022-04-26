@@ -29,8 +29,7 @@ namespace GYUZZ6_HFT_2021222.Models
         {
             return obj is Brand brand &&
                    Id == brand.Id &&
-                   Name == brand.Name &&
-                   EqualityComparer<ICollection<Car>>.Default.Equals(Cars, brand.Cars);
+                   Name == brand.Name;
         }
 
         public override int GetHashCode()

@@ -47,8 +47,7 @@ namespace GYUZZ6_HFT_2021222.Models
                    RenterName == rent.RenterName &&
                    Date == rent.Date &&
                    RentTime == rent.RentTime &&
-                   Rating == rent.Rating &&
-                   EqualityComparer<Car>.Default.Equals(Car, rent.Car);
+                   Rating == rent.Rating;
         }
 
         public override int GetHashCode()
