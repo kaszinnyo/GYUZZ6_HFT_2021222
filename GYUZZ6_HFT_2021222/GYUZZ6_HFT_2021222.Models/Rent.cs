@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -37,5 +38,22 @@ namespace GYUZZ6_HFT_2021222.Models
         [NotMapped]
         [JsonIgnore]
         public virtual Car Car { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Rent rent &&
+                   Id == rent.Id &&
+                   CarId == rent.CarId &&
+                   RenterName == rent.RenterName &&
+                   Date == rent.Date &&
+                   RentTime == rent.RentTime &&
+                   Rating == rent.Rating &&
+                   EqualityComparer<Car>.Default.Equals(Car, rent.Car);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, CarId, RenterName, Date, RentTime, Rating, Car);
+        }
     }
 }

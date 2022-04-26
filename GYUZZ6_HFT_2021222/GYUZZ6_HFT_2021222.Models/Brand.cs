@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -23,5 +24,18 @@ namespace GYUZZ6_HFT_2021222.Models
 
         [NotMapped]
         public virtual ICollection<Car> Cars { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Brand brand &&
+                   Id == brand.Id &&
+                   Name == brand.Name &&
+                   EqualityComparer<ICollection<Car>>.Default.Equals(Cars, brand.Cars);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, Cars);
+        }
     }
 }

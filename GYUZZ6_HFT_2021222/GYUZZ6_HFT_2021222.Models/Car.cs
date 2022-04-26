@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -36,5 +37,21 @@ namespace GYUZZ6_HFT_2021222.Models
 
         [NotMapped]
         public virtual ICollection<Rent> Rents { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Car car &&
+                   Id == car.Id &&
+                   Model == car.Model &&
+                   BasePrice == car.BasePrice &&
+                   BrandId == car.BrandId &&
+                   EqualityComparer<Brand>.Default.Equals(Brand, car.Brand) &&
+                   EqualityComparer<ICollection<Rent>>.Default.Equals(Rents, car.Rents);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Model, BasePrice, BrandId, Brand, Rents);
+        }
     }
 }
