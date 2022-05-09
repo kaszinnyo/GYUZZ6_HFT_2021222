@@ -93,6 +93,17 @@ namespace GYUZZ6_HFT_2021222.Test
         }
 
         [Test]
+        public void CarUpdateTest()
+        {
+            var car = new Car() { Id = 1, BasePrice = 15000 };
+            //act
+            carLogic.Update(car);
+
+            //assert
+            mockCarRepository.Verify(c => c.Update(car), Times.Once);
+        }
+
+        [Test]
         public void BrandDeleteTest()
         {
             //act
