@@ -41,15 +41,15 @@ namespace GYUZZ6_HFT_2021222.Test
                 new Rent(){ Id = 1, CarId = 1, Date = new DateTime(2021,04,20), RenterName = "Drew", RentTime = 1.5, Rating = 4.5, Car = carInput[0] },
                 new Rent(){ Id = 2, CarId = 2, Date = new DateTime(2021,04,21), RenterName = "Nick", RentTime = 1.8, Rating = 3.5, Car = carInput[1] },
             };
-            mockBrandRepository = new Mock<IRepository<Brand>>();
+            mockBrandRepository = new Mock<IRepository<Brand>>(MockBehavior.Loose);
             mockBrandRepository.Setup(mb => mb.ReadAll()).Returns(brandInput.AsQueryable());
             brandLogic = new BrandLogic(mockBrandRepository.Object);
 
-            mockCarRepository = new Mock<IRepository<Car>>();
+            mockCarRepository = new Mock<IRepository<Car>>(MockBehavior.Loose);
             mockCarRepository.Setup(mc => mc.ReadAll()).Returns(carInput.AsQueryable());
             carLogic = new CarLogic(mockCarRepository.Object);
 
-            mockRentRepository = new Mock<IRepository<Rent>>();
+            mockRentRepository = new Mock<IRepository<Rent>>(MockBehavior.Loose);
             mockRentRepository.Setup(mr => mr.ReadAll()).Returns(rentInput.AsQueryable());
             rentLogic = new RentLogic(mockRentRepository.Object, mockCarRepository.Object, mockBrandRepository.Object);
 
@@ -60,36 +60,46 @@ namespace GYUZZ6_HFT_2021222.Test
         public void BrandCreateTest()
         {
             var brand = new Brand() { Name = "Bmw" };
+            var wrongbrand = new Brand() { Name = "a" };
 
             //act
             brandLogic.Create(brand);
 
             //assert
             mockBrandRepository.Verify(b => b.Create(brand), Times.Once);
+            mockBrandRepository.Setup(r => r.Create(wrongbrand));
+            Assert.Throws(typeof(ArgumentException), () => brandLogic.Create(wrongbrand));
         }
 
         [Test]
         public void CarCreateTest()
         {
             var car = new Car() { Model = "Tesla Model 2" };
+            var wrongcar = new Car() { Model = "a" };
 
             //act
             carLogic.Create(car);
 
             //assert
             mockCarRepository.Verify(c => c.Create(car), Times.Once);
+            mockCarRepository.Setup(r => r.Create(wrongcar));
+            Assert.Throws(typeof(ArgumentException), () => carLogic.Create(wrongcar));
         }
 
         [Test]
         public void RentCreateTest()
         {
             var rent = new Rent() { RenterName = "Drew", Rating = 3.4 };
+            var wrongrent = new Rent() { RenterName = "a"};
 
             //act
             rentLogic.Create(rent);
 
             //assert
             mockRentRepository.Verify(r => r.Create(rent), Times.Once);
+            mockRentRepository.Setup(r => r.Create(wrongrent));
+            Assert.Throws(typeof(ArgumentException), () => rentLogic.Create(wrongrent));
+
         }
 
         [Test]

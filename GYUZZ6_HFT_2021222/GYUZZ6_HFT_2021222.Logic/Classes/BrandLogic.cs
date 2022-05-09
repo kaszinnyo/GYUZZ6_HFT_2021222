@@ -20,7 +20,8 @@ namespace GYUZZ6_HFT_2021222.Logic.Classes
 
         public void Create(Brand item)
         {
-            this.repo.Create(item);
+            if (item.Name.Length < 2) throw new ArgumentException("Túl rövid!");
+            else this.repo.Create(item);
         }
 
         public void Update(Brand item)

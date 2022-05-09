@@ -22,7 +22,8 @@ namespace GYUZZ6_HFT_2021222.Logic.Classes
 
         public void Create(Rent item)
         {
-            this.rentRepo.Create(item);
+            if (item.RenterName.Length < 2) throw new ArgumentException("Túl rövid!");
+            else this.rentRepo.Create(item);
         }
         public void Update(Rent item)
         {

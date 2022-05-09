@@ -17,7 +17,8 @@ namespace GYUZZ6_HFT_2021222.Logic
 
         public void Create(Car item)
         {
-            this.repo.Create(item);
+            if (item.Model.Length < 2) throw new ArgumentException("Túl rövid!");
+            else this.repo.Create(item);
         }
 
         public void Update(Car item)
