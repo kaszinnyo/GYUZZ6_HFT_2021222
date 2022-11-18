@@ -1,3 +1,4 @@
+using GYUZZ6_HFT_2021222.EndPoint.Services;
 using GYUZZ6_HFT_2021222.Logic;
 using GYUZZ6_HFT_2021222.Logic.Classes;
 using GYUZZ6_HFT_2021222.Logic.Interfaces;
@@ -43,6 +44,8 @@ namespace GYUZZ6_HFT_2021222.EndPoint
             services.AddTransient<IBrandLogic, BrandLogic>();
             services.AddTransient<IRentLogic, RentLogic>();
 
+            services.AddSignalR();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -76,6 +79,7 @@ namespace GYUZZ6_HFT_2021222.EndPoint
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<SignalRHub>("/hub");
             });
         }
     }
