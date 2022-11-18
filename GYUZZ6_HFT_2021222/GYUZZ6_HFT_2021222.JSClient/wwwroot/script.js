@@ -1,10 +1,11 @@
 ﻿let cars = [];
 let connection = null;
 
+let caIdtoUpdate = -1;
 getdata();
 setupSignalR();
 
-function setupSignalR(){
+function setupSignalR() {
     connection = new signalR.HubConnectionBuilder()
         .withUrl("http://localhost:18131/hub")
         .configureLogging(signalR.LogLevel.Information)
@@ -15,6 +16,10 @@ function setupSignalR(){
     });
 
     connection.on("CarDeleted", (user, message) => {
+        getdata();
+    });
+
+    connection.on("CarUpdated", (user, message) => {
         getdata();
     });
 
@@ -51,8 +56,44 @@ function display() {
             + c.model + "</td><td>"
             + c.brandId + "</td><td>"
             + c.basePrice + "</td><td>"
-            + `<button type="button" onclick="remove(${c.id})">Delete</button>` + "</td></tr>"
+            + `<button type="button" onclick="remove(${c.id})">Delete</button>`
+            + `<button type="button" onclick="showupdate(${c.id})">Update</button>`
+            + "</td></tr>"
     });
+}
+
+function showupdate(id) {
+    document.getElementById('carModeltoUpdate').value = cars.find(t => t['id'] == id)['model'];
+    document.getElementById('carBrandIDtoUpdate').value = cars.find(t => t['id'] == id)['brandId'];
+    document.getElementById('carBasePricetoUpdate').value = cars.find(t=> t['id'] == id)['basePrice'];
+    document.getElementById('uformdiv').style.display = 'flex';
+    caIdtoUpdate = id;
+}
+
+function update() {
+    document.getElementById('uformdiv').style.display = 'none';
+    let model = document.getElementById('carModeltoUpdate').value;
+    let brandID = document.getElementById('carBrandIDtoUpdate').value;
+    let basePrice = document.getElementById('carBasePricetoUpdate').value;
+    fetch('http://localhost:18131/car', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(
+            {
+                id: caIdtoUpdate,
+                model: model,
+                brandId: brandID,
+                basePrice: basePrice,
+            })
+    })
+        .then(response => response)
+        .then(data => {
+            console.log('Success:', data);
+            getdata();
+        })
+        .catch((error) => { console.error('Error:', error); });
 }
 
 function remove(id) {
@@ -61,7 +102,8 @@ function remove(id) {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: null })
+        body: null
+    })
         .then(response => response)
         .then(data => {
             console.log('Success:', data);
@@ -77,13 +119,15 @@ function create() {
     fetch('http://localhost:18131/car', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json', },
+            'Content-Type': 'application/json',
+        },
         body: JSON.stringify(
             {
                 model: model,
                 brandId: brandID,
                 basePrice: basePrice,
-            })})
+            })
+    })
         .then(response => response)
         .then(data => {
             console.log('Success:', data);

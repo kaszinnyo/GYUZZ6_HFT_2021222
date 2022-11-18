@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Car Catalog</h1>
-    <div>
+    <div id="formdiv">
         <label>Model</label>
         <input type="text" id="carModel" />
         <label>BrandID</label>
@@ -15,6 +15,15 @@
         <label>BasePrice</label>
         <input type="number" id="carBasePrice" />
         <button type="button" onclick="create()">Add Car</button>
+    </div>
+    <div id="uformdiv">
+        <label>Model</label>
+        <input type="text" id="carModeltoUpdate" />
+        <label>BrandID</label>
+        <input type="number" id="carBrandIDtoUpdate" />
+        <label>BasePrice</label>
+        <input type="number" id="carBasePricetoUpdate" />
+        <button type="button" onclick="update()">Update Car</button>
     </div>
     <table>
         <thead>

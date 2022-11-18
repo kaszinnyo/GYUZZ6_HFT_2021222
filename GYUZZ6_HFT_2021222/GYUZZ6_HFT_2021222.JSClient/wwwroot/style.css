@@ -33,6 +33,20 @@ th {
         font-weight: bolder;
     }
 
+#uformdiv {
+    display: flex;
+    margin-bottom: 1px;
+}
+
+    #uformdiv label, button, input {
+        margin: 1%;
+        padding: 7px;
+    }
+
+    #uformdiv label {
+        font-weight: bolder;
+    }
+
 table button {
     padding: 2px;
 }
