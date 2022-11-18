@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace GYUZZ6_GUI_2022231.WpfClient
+namespace GYUZZ6_HFT_2021222.WpfClient
 {
     /// <summary>
     /// Interaction logic for App.xaml

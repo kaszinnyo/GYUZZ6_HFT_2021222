@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GYUZZ6_GUI_2022231.WpfClient
+namespace GYUZZ6_HFT_2021222.WpfClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
