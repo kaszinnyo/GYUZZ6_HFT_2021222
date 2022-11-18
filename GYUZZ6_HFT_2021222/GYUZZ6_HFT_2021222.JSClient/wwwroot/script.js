@@ -4,18 +4,8 @@ let connection = null;
 getdata();
 setupSignalR();
 
-async function start() {
-    try {
-        await connection.start();
-        //console.log("SignalR Connected.");
-    } catch (err) {
-        /*console.log(err);*/
-        setTimeout(start, 5000);
-    }
-};
-
 function setupSignalR(){
-    const connection = new signalR.HubConnectionBuilder()
+    connection = new signalR.HubConnectionBuilder()
         .withUrl("http://localhost:18131/hub")
         .configureLogging(signalR.LogLevel.Information)
         .build();
@@ -33,6 +23,16 @@ function setupSignalR(){
     });
     start();
 }
+
+async function start() {
+    try {
+        await connection.start();
+        console.log("SignalR Connected.");
+    } catch (err) {
+        console.log(err);
+        setTimeout(start, 5000);
+    }
+};
 
 async function getdata() {
     await fetch('http://localhost:18131/car')
@@ -82,7 +82,7 @@ function create() {
             {
                 model: model,
                 brandId: brandID,
-                basePrice: basePrice
+                basePrice: basePrice,
             })})
         .then(response => response)
         .then(data => {
