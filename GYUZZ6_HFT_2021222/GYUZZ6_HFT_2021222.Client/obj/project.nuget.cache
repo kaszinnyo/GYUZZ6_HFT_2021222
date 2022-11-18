@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "obE8omOEkMnBhPDesIge0u5JT+K1tHrqYVooQQzIlFKMuqIXZKnFfA12MMErTsuiBRXzm1PQWnZjmfmWOmS73g==",
+  "dgSpecHash": "iRk+bQfxLA53AIEYGGtnna2xYR5Foq6C/OVeXykToGv1FkhJKZZB/nQPPy7mBdntgCOEVVLBwhZkScRwNgAwSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
+  "projectFilePath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Client\\GYUZZ6_HFT_2021222.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barna\\.nuget\\packages\\consolemenu-simple\\2.4.3\\consolemenu-simple.2.4.3.nupkg.sha512",
     "C:\\Users\\Barna\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.8\\microsoft.aspnet.webapi.client.5.2.8.nupkg.sha512",

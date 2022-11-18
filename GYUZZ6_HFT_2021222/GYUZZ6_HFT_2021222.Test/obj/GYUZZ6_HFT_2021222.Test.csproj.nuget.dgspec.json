@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj": {}
+    "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj": {
+    "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
         "projectName": "GYUZZ6_HFT_2021222.Logic",
-        "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
+        "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj",
         "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\obj\\",
+        "outputPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
               },
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj"
               }
             }
           }
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
+    "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
         "projectName": "GYUZZ6_HFT_2021222.Models",
-        "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
+        "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj",
         "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\obj\\",
+        "outputPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -112,7 +113,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -121,18 +123,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
+    "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
         "projectName": "GYUZZ6_HFT_2021222.Repository",
-        "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
+        "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
         "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -152,8 +154,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
               }
             }
           }
@@ -189,7 +191,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -198,18 +201,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj": {
+    "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
         "projectName": "GYUZZ6_HFT_2021222.Test",
-        "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
+        "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
         "packagesPath": "C:\\Users\\Barna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\obj\\",
+        "outputPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -229,14 +232,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Logic\\GYUZZ6_HFT_2021222.Logic.csproj"
               },
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Models\\GYUZZ6_HFT_2021222.Models.csproj"
               },
-              "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
-                "projectPath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj"
+              "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj": {
+                "projectPath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj"
               }
             }
           }
@@ -274,7 +277,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -283,7 +287,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

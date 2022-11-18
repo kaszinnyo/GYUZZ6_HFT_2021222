@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cqGNw5QsJp+2qWuQ8/GgyN0aEyRnjzYYkxgOe6NFz+QdnHNapRzCYHGPVFY/eCSQxY9jHzRumij+5gXmhXz0Kg==",
+  "dgSpecHash": "B1RZMx9u5osaHIW8A34Rdp7Usf9oMh1ffKOdDCdg0/iiToXRjp7J/e0yBdA8SdkoDAQTHRwl9CH++HmqFuVSRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
+  "projectFilePath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Test\\GYUZZ6_HFT_2021222.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barna\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Barna\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

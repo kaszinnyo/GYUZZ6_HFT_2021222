@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j5KmiGq8woIwjoag4hOR9EaO/NU9axNYnhBXIynHU90JqLDRVhrqtu3VepVe2u15T7LMFXU1IghaE0V+wem9BA==",
+  "dgSpecHash": "DTFXcofx3Ybcy5mLOAmtwMEs6OlNkbCR1+MB5B8W4TPtp5YgtPXvb9494bhQM2KvuQbQEthJrdn6N5gYaKaElA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Barna\\Desktop\\feleves\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Barna\\Desktop\\ff\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222\\GYUZZ6_HFT_2021222.Repository\\GYUZZ6_HFT_2021222.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barna\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Barna\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
