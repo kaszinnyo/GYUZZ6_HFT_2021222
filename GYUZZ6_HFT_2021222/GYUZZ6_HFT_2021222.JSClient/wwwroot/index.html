@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Car UI</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Car Catalog</h1>
+    <div>
+        <label>Model</label>
+        <input type="text" id="carModel" />
+        <label>BrandID</label>
+        <input type="number" id="carBrandID" />
+        <label>BasePrice</label>
+        <input type="number" id="carBasePrice" />
+        <button type="button" onclick="create()">Add Car</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Model</th>
+                <th>BrandID</th>
+                <th>BasePrice</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="resultArea">
+        </tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
